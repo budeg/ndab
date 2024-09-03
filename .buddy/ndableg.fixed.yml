@@ -14,4 +14,3 @@
     - ""
     cached_dirs:
     - "/root/.cache/pip"
-    shell: "BASH"
