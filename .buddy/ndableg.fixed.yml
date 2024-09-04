@@ -4,8 +4,3 @@
     refs:
     - "refs/heads/master"
   fail_on_prepare_env_warning: true
-  actions:
-  - action: "Build Docker image"
-    type: "DOCKERFILE"
-    dockerfile_path: ""
-    do_not_prune_images: true
