@@ -13,4 +13,5 @@
     - "sudo apt install docker-compose"
     - "sudo docker-compose up"
     - "sudo docker-compose up --build"
+    - "sudo docker-compose start"
     shell: "BASH"
