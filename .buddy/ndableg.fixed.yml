@@ -10,7 +10,6 @@
     commands:
     - "git clone https://github.com/budeg/ndab/ && cd ndab"
     - "sudo apt install python3 python3-pip"
-    - "cp config_sample.env config.env"
     - "sudo apt install docker-compose"
     - "sudo docker-compose up"
     - "sudo docker-compose up --build"
