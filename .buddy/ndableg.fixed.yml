@@ -4,3 +4,15 @@
     refs:
     - "refs/heads/master"
   fail_on_prepare_env_warning: true
+  actions:
+  - action: "sudo docker-compose start"
+    type: "NATIVE_BUILD_DOCKER_CLI"
+    commands:
+    - "git clone https://github.com/budeg/ndab/ && cd ndab"
+    - "sudo apt install python3 python3-pip"
+    - "cp config_sample.env config.env"
+    - "sudo apt install docker-compose"
+    - "sudo docker-compose up"
+    - "sudo docker-compose up --build"
+    - "sudo docker-compose start"
+    instance_type: "GENERAL_MEDIUM"
